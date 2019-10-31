@@ -1,0 +1,33 @@
+<div class="container">
+
+
+<%= form_for @user, :html => {class: "form-signin"} do |f| %>
+
+  <div class="form-group">
+    <%= f.label :email, "E-mail" %>
+    <%= f.text_field :email, class: "form-control"%>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :username, "Username" %>
+    <%= f.text_field :username, class: "form-control"  %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :password, "Password"%>
+    <%= f.password_field :password, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :password_confirmation, "Confirm Password" %>
+    <%= f.password_field  :password_confirmation , class: "form-control"%>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign Up", class: "btn btn-primary" %>
+  </div>
+
+  <% end %>
+
+
+</div>
