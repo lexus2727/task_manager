@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   end
 
 
-  resources :assinments
+  resources :assignments
   resources :tasks
 
   get '/signout', to: 'sessions#destroy'

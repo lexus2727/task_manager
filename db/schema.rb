@@ -15,8 +15,8 @@ ActiveRecord::Schema.define(version: 2019_10_30_210809) do
   create_table "assignments", force: :cascade do |t|
     t.string "name"
     t.string "street"
-    t.string "state"
     t.string "city"
+    t.string "state"
     t.integer "zip", limit: 5
     t.integer "phone", limit: 8
     t.datetime "created_at", precision: 6, null: false
