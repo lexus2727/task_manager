@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   resources :sessions
 
-  resources :users, only: [:new, :create] do
+  resources :users, only: [:new, :create, :show] do
     resources :tasks, only: [:index, :show, :new]
   end
 

@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2019_10_30_210809) do
     t.string "city"
     t.string "state"
     t.integer "zip", limit: 5
-    t.integer "phone", limit: 8
+    t.string "phone"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -34,9 +34,9 @@ ActiveRecord::Schema.define(version: 2019_10_30_210809) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "password_digest"
-    t.string "username"
     t.string "email"
+    t.string "username"
+    t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.boolean "admin", default: false

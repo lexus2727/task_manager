@@ -7,7 +7,7 @@ class CreateAssignments < ActiveRecord::Migration[6.0]
       t.string :state
       
       t.integer :zip, :limit => 5
-      t.integer :phone, :limit => 8
+      t.string :phone, :length => 12
 
       t.timestamps
     end

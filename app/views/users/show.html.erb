@@ -4,9 +4,9 @@
 
 
 <!-- Order tasks by due date -->
-<!-- filter by project -->
+<!-- filter by assignments -->
 <ul>
-  <% @tasks.all.each do |task| %>
+  <% @tasks.each do |task| %>
 
     <li><%= task.description %></li>
   <% end  %>
@@ -15,5 +15,4 @@
   <!-- link to create new task  -->
   
 
-  <!--  link to view all projects and tasks -->
   <%= link_to "See all Tasks", assignments_path 
