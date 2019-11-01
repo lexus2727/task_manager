@@ -1,14 +1,18 @@
-<h1>Your Massages</h1>
+<h1>Task Assignments</h1>
 
 <ol>
 <br>
 <% @assignments.each do |assignment| %>
-     
+    
+    
      
      <li><%= link_to "#{assignment.name}", assignment_path(assignment) %></li>
        <br>
        <% tasks = assignment.tasks %>
+       <%= render partial: 'tasks/tasklist', :locals => {:@tasks => tasks}%>
       <% end %>
+      
+      
      
     </ol>
 
