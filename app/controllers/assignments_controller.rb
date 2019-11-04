@@ -2,8 +2,10 @@ class AssignmentsController < ApplicationController
     before_action :require_login
     before_action :set_assignment, only: [:show, :edit, :update, :destroy]
     def index
+        
         @assignments = Assignment.all
-    end
+        end
+    
   
     def show
         @tasks = @assignment.tasks
@@ -54,6 +56,6 @@ class AssignmentsController < ApplicationController
     end
   
     def require_login
-      return head(:forbidden) unless session.include? :user_id
+      #return head(:forbidden) unless session.include? :user_id
     end
   end

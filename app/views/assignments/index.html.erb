@@ -4,13 +4,13 @@
 <br>
 <% @assignments.each do |assignment| %>
     
-    
      
      <li><%= link_to "#{assignment.name}", assignment_path(assignment) %></li>
        <br>
        <% tasks = assignment.tasks %>
     
       <% end %>
+
       
       
      

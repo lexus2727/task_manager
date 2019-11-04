@@ -1,7 +1,7 @@
 class User < ApplicationRecord
     has_secure_password
     has_many :tasks
-    has_many :projects, through: :tasks
+    has_many :assignments, through: :tasks
 
 
   validates :email, :username, :password, presence: true

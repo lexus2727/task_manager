@@ -9,11 +9,10 @@ class SessionsController < ApplicationController
       end
 
       def create
-        if auth_hash
+        if auth_hash 
           #user signed in with omniauth
           @user = User.find_or_create_by_omniauth(auth_hash)
-  
-          session[:user_id] = @user.id
+           session[:user_id] = @user.id
           #when user signs in they will see just their tasks and projects
           redirect_to assignments_path
   
