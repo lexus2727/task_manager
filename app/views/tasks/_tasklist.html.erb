@@ -19,7 +19,7 @@
           <td> <%= task.assignment.name %> </td>
           <td> <%= task.due_date.strftime("%B %d, %Y") unless task.due_date.nil?  %> </td>
           <td> <%= task.user.username  %> </td>
-          <td> <%= link_to "Edit", edit_task_path(task) %> / <%=  link_to 'Delete', task, method: :delete, data: { confirm: 'Are you sure?' }  %> </td>
+          <td> <%= link_to "Edit", edit_task_path(task) %> / <%=  link_to "Delete", task, method: :delete, data: { confirm: 'Are you sure?' }  %>  </td>
           <td> <a class="btn btn-outline-success" href="/tasks/<%= task.id %>/complete">Complete </a>  </td>
         </tr>
       <% end %>

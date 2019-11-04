@@ -21,6 +21,7 @@ class TasksController < ApplicationController
       if params[:user_id]
         @user = User.find(params[:user_id])
         @task = Task.new(user_id: @user.id)
+        #if user.id is found in params then they will be able to create a task
   
       else
         @user = nil
@@ -44,12 +45,16 @@ class TasksController < ApplicationController
     def edit
       #@task = Task.find(params[:id])
     end
+
+    def show
+       # @tasks = assignment.tasks
+    end
   
     def update
   
       if @task.update(task_params)
   
-        redirect_to projects_path
+        redirect_to assignments_path
       else
         render :edit
       end
@@ -63,7 +68,7 @@ class TasksController < ApplicationController
   
     def destroy
       @task.destroy
-      redirect_to assignments_path
+      redirect_to tasks_path(@task)
     end
   
   
