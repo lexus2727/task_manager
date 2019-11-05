@@ -1,18 +1,12 @@
 <h1>Task Assignments</h1>
 
-<ol>
+
 <br>
 <% @assignments.each do |assignment| %>
-    
+   
      
-     <li><%= link_to "#{assignment.name}", assignment_path(assignment) %></li>
+     <%= assignment.name %>, assignment_path(assignment)
        <br>
        <% tasks = assignment.tasks %>
     
-      <% end %>
-
-      
-      
-     
-    </ol>
-
+       <% end %>

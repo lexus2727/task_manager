@@ -19,7 +19,7 @@ class AssignmentsController < ApplicationController
     def create
       @assignment = Assignment.new(assignment_params)
       if @assignment.save
-        redirect_to assignments_path
+        redirect_to tasks_path
       else
         @error = @assignment.errors
         render :new

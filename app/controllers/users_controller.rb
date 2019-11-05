@@ -6,7 +6,7 @@ class UsersController < ApplicationController
           flash[:notice] = "You are already logged in."
         else
           @user = User.new
-          render layout: 'sessions'
+          render :new, layout: 'sessions'
         end
       end
     

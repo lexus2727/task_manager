@@ -47,9 +47,10 @@ class TasksController < ApplicationController
     end
 
     def show
-       # @tasks = assignment.tasks
-    end
-  
+        
+        @task = Task.find_by(params[:id])
+     end
+    
     def update
   
       if @task.update(task_params)
