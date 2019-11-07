@@ -6,7 +6,7 @@ class UsersController < ApplicationController
           flash[:notice] = "You are already logged in."
         else
           @user = User.new
-          render :new, layout: 'sessions'
+          render layout: 'sessions'
         end
       end
     
@@ -19,13 +19,13 @@ class UsersController < ApplicationController
           session[:user_id] = @user.id
           redirect_to user_path(@user)
         else
-          render :new
+          render :new, layout: 'sessions'
         end
     
       end
     
       def show
-        @user = User.find_by(id: params[:id])
+        @user = User.find_by(params[:id])
         @tasks = @user.tasks
         
       end

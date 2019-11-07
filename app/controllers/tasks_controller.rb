@@ -45,7 +45,7 @@ class TasksController < ApplicationController
     def edit
      
       
-      @task = Task.find_by(id: params[:id])
+      @task = Task.find(params[:id])
     end
 
    

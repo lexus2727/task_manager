@@ -5,8 +5,9 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
@@ -34,7 +35,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="<%= new_user_path  %>">Sign Up</a>
+            <a class="nav-link" href="<%= new_user_path %>">Sign Up</a>
           </li>
 
         </ul>
