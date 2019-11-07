@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+Task Manager App
+Ruby on Rails app that helps you organize tasks and assignments for you and your team.
 
-* Ruby version
+Installation
+Clone this repo and run bundle install
+Run rake db:migrate
+Run rake db:seed
+Run rails s
+Open your browser to localhost:3000
+Contributing
+Bug reports and pull requests are welcome on GitHub at https://github.com/lexus2727/task_manager
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+License
+The project is available as open source under the terms of the MIT LICENSE
