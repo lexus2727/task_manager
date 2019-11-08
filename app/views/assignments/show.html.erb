@@ -8,6 +8,5 @@
 </h3>
 
 <%= link_to "Edit Assignment", edit_assignment_path(@assignment) %>
-<%=  link_to 'Delete', @assignment, method: :delete, data: { confirm: 'Are you sure?' } %> 
-<% tasks = @assignment.tasks %>
-<%= render partial: 'tasks/tasklist', :locals => {:@tasks => tasks} %>
+<%=  link_to 'Delete', @assignment, method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= render partial: 'tasks/tasklist', :locals => {tasks: @assignment.tasks} %>

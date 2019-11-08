@@ -14,6 +14,7 @@ class TasksController < ApplicationController
         end
       else
         @tasks = Task.all
+        
       end
     end
   

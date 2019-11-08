@@ -12,7 +12,7 @@
     <tbody>
 
 
-    <% @tasks.each do |task| %>
+    <% tasks.each do |task| %>
       <% if !task.completed %>
       <tr scope="row">
         <td><%= task.description %></td>

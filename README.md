@@ -1,6 +1,3 @@
-# README
-
-
 Task Manager App
 Ruby on Rails app that helps you organize tasks and assignments for you and your team.
 

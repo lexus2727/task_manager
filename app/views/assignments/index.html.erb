@@ -11,6 +11,6 @@
             
 
        <br>
-       <% tasks = assignment.tasks %>
-       <%= render partial: 'tasks/tasklist', :locals => {:@tasks => tasks} %>
+      
+       <%= render partial: 'tasks/tasklist', :locals => {tasks: assignment.tasks} %>
        <% end %>
