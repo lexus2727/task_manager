@@ -22,4 +22,12 @@ body.home {
 .branding {
     margin-top: 180px;
 }
-  
+
+.container h1, h2{
+    font-family: nunito;
+    
+}
+
+.a-index {
+    font-family: nunito;
+}
