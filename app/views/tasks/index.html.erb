@@ -1,11 +1,11 @@
-<% if @user %>
+  <% if @user %>
 <div class="container">
   <h1>Welcome, <%= @user.username if @user%>  </h1><br>
   <h2>Here are your tasks:</h2><br>
   <%= link_to "Give yourself a new task!", new_user_task_path(@user) %>
   <br><br>
 </div>
-<% end  %>
+  <% end  %>
 
 <div class="container">
   <%= render partial: 'tasklist', locals: {tasks: @tasks} %>

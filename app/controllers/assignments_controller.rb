@@ -2,14 +2,11 @@ class AssignmentsController < ApplicationController
     before_action :require_login
     before_action :set_assignment, only: [:show, :edit, :update, :destroy]
     def index
-        
-        @assignments = Assignment.all
-        end
+      @assignments = Assignment.all
+    end
     
-  
     def show
         @tasks = @assignment.tasks
-      
     end
   
     def new
@@ -27,11 +24,9 @@ class AssignmentsController < ApplicationController
     end
   
     def edit
-  
     end
   
     def update
-  
       if @assignment.update(assignments_params)
         redirect_to assignments_path
       else
