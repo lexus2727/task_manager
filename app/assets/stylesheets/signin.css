@@ -1,0 +1,25 @@
+h1.cover-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-right: 220px;
+    margin-top: 90px;
+    
+    font-size: 50px;
+    
+    
+    
+}
+
+.oauth {
+    margin-left: 200px;
+}
+
+
+body.home {
+    background: url("https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+}
+
+.branding {
+    margin-top: 180px;
+}
+  
