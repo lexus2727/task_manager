@@ -31,3 +31,8 @@ body.home {
 .a-index {
     font-family: nunito;
 }
+
+body.text-center {
+    background: url("https://images.pexels.com/photos/1007025/pexels-photo-1007025.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    font-weight: bolder;
+}
