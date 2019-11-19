@@ -27,7 +27,7 @@ class AssignmentsController < ApplicationController
     end
   
     def update
-      if @assignment.update(assignments_params)
+      if @assignment.update(assignment_params)
         redirect_to assignments_path
       else
         render :edit
